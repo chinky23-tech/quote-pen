@@ -1,209 +1,43 @@
 *{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+:root{
+  --primary-color: #ff4500;
+  --secondary-color: #6fca53;
+  --tertiary-color: #3B5998;
+  --quaternary-color: #125688;
+  --quinary-color: #bb0000;
+  --senary-color: #55ACEE;
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #808080;
 }
 body{
   font-family:verdana, sans-serif;
   margin:0;
-  background-color: rgb(8, 3, 3);
+  background-color: var(--gray);
 }
-
-.row{
+.nav-links {
   display: flex;
-margin-left: 55px;
-  }
-
-  img{
-    width: 350px;
-    height:   50vh;
-    padding: 10px;
-    margin-top: 2px;
-    border-radius: 25px 25px 25px 25px;
-  }
-
-
-.slideshow-container{
-margin: 2em  5em 2em 5em;
-border-radius: 25px 25px 25px 25px;
-background: #6fca53;
-}
-.mySlides{
-  padding: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--white);
+  padding: 20px 20px;
+  color: var(--black);
+  font-size: 1em;
+  list-style: none;
+  text-decoration: none;
   text-align: center;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-font-weight: bold;
-animation-name: mySlides;
-animation-duration: 4s;
-}
-@keyframes mySlides{
-  from{background-color: red;}
-  to{background-color: yellow;}
-}
-/* Add an italic font style to all quotes */
-q {
-  font-style: italic;
-}
-
-/* Add a blue color to the author */
-.author {
-  color: rgb(202, 84, 15);
-}
-/* Navbar styling */
- .logo{
-  color:rgb(218, 93, 21);
-  font-weight: 400;
-  margin: 1em;
-}
-nav{
-  display:flex;
-  align-items: center;
-  justify-content: space-between;
-padding:0.5em;
-  background-color: rgb(8, 3, 3);
-  
-}
-.nav-left{
-  display:flex;
-  align-items: center;
-}
-.nav-links{
-  display: flex;
-  list-style-type: none;
-  align-items: center;
-  
-  
-  
+  text-transform: uppercase;
+  transition: background-color 0.3s;
 }
 .nav-links a{
   text-decoration: none;
-  color: rgb(47, 154, 204);
-}
-.nav-links li{
-  margin: 0 2em;
-  
-
+  color: var(--black);
 }
 
-a,li{
-  text-decoration: none;
-  list-style: none;
-  color:rgb(47, 154, 204);
-}
-
-.nav-right a{
-color:white;
-  text-decoration: none;
-  padding: 5px 10px;
-  border: 1px solid white;
-  border-radius: 5px;
-  margin-left: 1em;
-  margin-right: 1em;
-}
-.login-btn{
-
-  background-color: transparent;
-}
-.signup-btn{
-  background-color: #ff4500;
-  border-color: #ff4500;
-  
-}
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-.slide-container{
-  position: relative;
-    height: 90vh;
-    overflow: hidden;
-    background-color: black;
-    background-size: cover;
-    background-position: center;
-    animation: slide 15s infinite;
-    background-image:url(images/slide1.jpeg);
-display: flex;
-    text-align: center;
-   
-  
-
-    }
-@keyframes slide{
-  20%{background-image:url(images/slide1.jpeg);
-    
-
-  }
-  40%{background-image:url(images/slide2.jpeg);}
-  
-
-60%{background-image:url(images/slide3.jpeg);}
-80%{background-image: url(images/slide4.jpeg);}
-100%{background-image: url(images/slide5.jpeg);}
-}
-footer{
-  padding: 80px;
-  background-color:rgb(8, 3, 3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.copyright{
- margin-left: 30em;
- position: relative;
- top:40px;
- left:40px;
- font-weight: 900;
- font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #cfc9c9;
-  
-}
-.f-list{
-  margin-left:30px;
-
-}
-li{
-  color:rgb(170, 170, 170);
-  
-}
-.f-header{
-  color: #cfc9c9;
-}
-.fa {
-  padding: 8px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-  border-radius: 50%;
-  padding: 10px;
-
-  
-}
-.fa-instagram{
-  color: white;
-  border-radius: 50%;
- background:  #125688;
- padding: 10px;
-}
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-  border-radius: 50%;
-  padding: 10px;
-
-}
-.fa-twitter{
-  color: white;
-  border-radius: 50%;
- padding: 10px;
-background: #55ACEE;
+.navlinks ,.logo{
+  color: var(--primary-color);
 }
