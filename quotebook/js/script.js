@@ -24,3 +24,6 @@ setInterval(nextSlide, 5000);
 // Initial show
 showSlide(currentSlide);
 
+
+
+
