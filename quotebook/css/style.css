@@ -50,11 +50,11 @@ left: 20px;
  .hero{
   background: var(--secondary-color);
   text-align: center;
-  height: 600px;
+  height: 300px;
   
  }
  .hero-content{
- padding: 60px ;
+ padding: 50px ;
   font-size: 1.5em;
   color: var(--black);
   
