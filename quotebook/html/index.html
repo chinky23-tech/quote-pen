@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quote Pen</title>
-  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -12,8 +12,12 @@
     <div class="logo">
       <a href="../html/index.html">QuotePen</a>
     </div>
+    <div class="hamburger" onclick="toggleMenu()"> 
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <ul class="nav-links">
-     
       <li><a href="../html/addquote.html">Add-Quote</a></li>
       <li><a href="../html/topquote.html">Top-Quote</a></li>
       <li><a href="../html/browsequote.html">Browse-Quote</a></li>
@@ -21,58 +25,28 @@
         <li><a href="about.html">About</a></li>
       </ul>
     </nav>
-  
+  <section class="hero">
+    <div class="hero-content">
+      <div class="Quote-slide active">
+<p>“The best way to predict the future is to create it.” </p>
+ <h6> || — Abraham Lincoln</h6>
+ </div>
+      <div class="Quote-slide">
+ <p>Good better,best .Never let it rest.'Till your good is better and your better is best.</p>
+ <h6>|| - St. Jerome</h6>
+ </div>
+      <div class="Quote-slide">
+ <p>It does not matter how slowly you go as long as you do not stop.</p>
+<h6>|| - Confucius</h6>
+</div>
+   </div>                                
+
+      <a href="../html/browsequote.html" class="btn">Browse a Quote</a>
     
-<!--slideshow-->
-<div class="slide-container" id="slide"></div>
-<!--quotes-->
-  <div class="slideshow-container">
-    <div class="mySlides">
-      <q>I love you the more in that I believe you had liked me for my own sake and for nothing else.</q>
-      <p class="author">- John Keats</p>
-    </div>
-    <div class="mySlides">
-      <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
-      <p class="author">- Ernest Hemingway</p>
-    </div>
-    <div class="mySlides">
-      <q>I have not failed. I've just found 10,000 ways that won't work.</q>
-      <p class="author">- Thomas A. Edison</p>
-    </div>
-   <div class="mySlides">
-    <q>You only live once, but if you do it right, once is enough.</q>
-      <p class="author">- Mae West </p>
-  </div>
-  <div class="mySlides">
-    <q>If you tell the truth, you don't have to remember anything.</q>
-      <p class="author">- Mark Twain </p>
-  </div>
+    </section>
 
-  </div>
-  <!--images in row-->
-  
-  <div class="row">
-    <div class="column">
-      <img src="images/img1.jpeg">
-      </div>
-      <div class="column">
-      <img src="images/img2.jpeg">
-      </div>
-      <div class="column">
-      <img src="images/img3.jpeg">
-      </div>
-      <div class="column">
-
-      <img src="images/img4.jpeg">
-      </div>
-      <div class="column">
-      <img src="images/img5.jpeg">
-      </div>
-    </div>
   
   <footer>
-    
-    
     <ul class="f-list">
       <h5 class="f-header">Company</h5>
       <li>  About </li>
@@ -97,6 +71,7 @@
      
       </ul>
       <p class="copyright">© 2024 QuotePen, Inc. </p>
-  <script src="script.js"></script>
+      </footer>
+  <script src="../js/script.js"></script>
 </body>
 </html>
