@@ -7,6 +7,7 @@
   --primary-color: #00c9c8;
   --secondary-color: #bffcf9;
   --sea-color:#47817f;
+  --offwhite: #c4f8f1ca;
   --white: #ffffff;
   --black: #000000;
 
@@ -14,7 +15,7 @@
 body{
   font-family:verdana, sans-serif;
   margin:0;
-  background-color: var(--gray);
+  background-color: var(--offwhite);
 }
 /*navbar*
 
@@ -57,7 +58,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1.5rem;
   background-color: var(--primary-color);
 }
 
@@ -139,6 +140,31 @@ nav {
     background-color: var(--black);
    
     transition: all 0.3s ease;
+  }
+  .top-quote{
+    max-width: 1200px;
+    margin: 0 auto; 
+    
+  }
+  .top-quote h2{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+  }
+  .quote-card{
+    text-align: center;
+    border: 1px solid var(--black);
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 3px 3px var(--primary-color), -1em 0 0.4em var(--sea-color);
+    border-radius: 10px;
+    font-size: 1.2em;
+    
+  }
+  .quote-card h6{
+    margin: 20px;
+    padding: 10px;
+    font-size: 1em;
   }
 /*responsive*/
  @media (max-width: 768px) {
