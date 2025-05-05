@@ -93,7 +93,7 @@ nav {
     flex-direction: column;
     position: absolute;
     top: 52px;
-    left: 0;
+    right:0;
     background-color: #fff;
     padding: 1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -134,6 +134,9 @@ nav {
   border-radius: 50px;
   color: var(--white);
   
+ }
+ .hero.hidden{
+  display: none;
  }
  .quote-slide{
   display:none;
