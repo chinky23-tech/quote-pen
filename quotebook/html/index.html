@@ -45,15 +45,48 @@
     
     </section>
    
-    <div class="container">
-      <h1>Random Quote</h1>
-      <div id="quote-box">
-        <p id="quote">Click the button to get a quote!</p>
-        <p id="author"></p>
+    <!--<div class="filter-container">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="Motivational">Motivational</button>
+      <button class="filter-btn" data-filter="Inspirational">Inspirational</button>
+      <button class="filter-btn" data-filter="Nature">Nature</button>
+      <button class="filter-btn" data-filter="Life">Life</button>
+      
+      <button class="filter-btn" data-filter="Wisdom">Wisdom</button>
+  </div>
+
+  <div class="items-container">
+      <div class="item" data-category="Motivational">
+        <p>"You can't cross the sea merely by standing and staring at the water."</p>
+        <h6> || - Rabindranath Tagore</h6>
       </div>
-      <button id="new-quote">New Quote</button>
-    </div>
-  
+      <div class="item" data-category="=Motivational">
+        <p>"You define your own life. Don't let other people write your script."</p>
+        <h6>|| - Oprah Winfrey</h6>
+      </div>
+      <div class="item" data-category="=Motivational">
+        <p>"You define your own life. Don't let other people write your script."</p>
+        <h6>|| - Oprah Winfrey</h6>
+      </div>
+      <div class="item" data-category="=Motivational">
+        <p>"You define your own life. Don't let other people write your script."</p>
+        <h6>|| - Oprah Winfrey</h6>
+      </div>
+      <div class="item" data-category="=Motivational">
+        <p>"You define your own life. Don't let other people write your script."</p>
+        <h6>|| - Oprah Winfrey</h6>
+      </div>
+      <div class="item" data-category="=Motivational">
+        <p>"You define your own life. Don't let other people write your script."</p>
+        <h6>|| - Oprah Winfrey</h6>
+      </div>
+      <div class="item" data-category="Inspirational">Item 2 (Category 2)</div>
+      <div class="item" data-category="Nature">Item 3 (Category 1)</div>
+      <div class="item" data-category="Life">Item 4 (Category 3)</div>
+      <div class="item" data-category="Love">Item 5 (Category 2)</div>
+      <div class="item" data-category="Wisdom">Item 6 (Category 3)</div>
+  </div>-->
+
 
    
     
@@ -72,7 +105,20 @@
     <h6>|| - Eleanor Roosevelt</h6>
   </div>
 </section>-->
-  
+<div class="filter-buttons">
+  <button class="filter-btn active" data-category="all">All</button>
+  <button class="filter-btn" data-category="motivational">Motivational</button>
+  <button class="filter-btn" data-category="inspirational">Inspirational</button>
+  <button class="filter-btn" data-category="nature">Nature</button>
+  <button class="filter-btn" data-category="life">Life</button>
+  <button class="filter-btn" data-category="wisdom">Wisdom</button>
+</div>
+
+<div class="quotes-container" id="quotesContainer">
+  <!-- Quotes will be inserted here by JavaScript -->
+</div>
+
+
   <footer>
     <ul class="f-list">
       <h5 class="f-header">Company</h5>
