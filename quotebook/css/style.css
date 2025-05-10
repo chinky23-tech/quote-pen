@@ -141,32 +141,62 @@ nav {
    
     transition: all 0.3s ease;
   }
-  /*
-  .top-quote{
-    max-width: 800px;
-    margin: 0 auto; 
-    
-  }
-  .top-quote h2{
-    text-align: center;
-    margin: 20px;
-    padding: 20px;
-  }
-  .quote-card{
-    text-align: center;
-   /* border: 1px solid var(--black);
-    padding: 20px;
+  /*filter btn styles*/
+
+.filter-buttons {
+  margin: 20px auto;
+  
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.filter-btn.active {
+  background-color: var(--sea-color);
+  color: white;
+}
+.quotes-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+.quote-card {
+  text-align: center;
+     padding: 20px;
     margin: 20px;
     box-shadow: 3px 3px var(--primary-color), -1em 0 0.4em var(--sea-color);
     border-radius: 10px;
     font-size: 1.2em;
     
-  }
-  .quote-card h6{
-    margin: 20px;
-    padding: 10px;
-    font-size: 1em;
-  }*/
+}
+.quote-card p{
+  font-size: 1em;
+  margin: 15px;
+  padding: 10px;
+}
+
+
+.item.hide {
+  display: none;
+}
+  
+
 /*responsive*/
  @media (max-width: 768px) {
   
@@ -181,6 +211,129 @@ nav {
     display: flex;
   } 
 }
+/* footer*/
+
+
+.footer {
+  background-color:var(--primary-color);
+  color: var(--black);
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.footer-column {
+
+  flex: 1 1 200px;
+  margin-left: 10em;
+  
+  
+}
+
+.footer h5 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: var(--black);
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.footer li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+
+  
+/* Social Icons */
+.social-icons {
+  display: flex;
+  
+  padding-top: 5px;
+  
+}
+
+.social-icons li {
+  margin-right: 10px;
+  font-size: 18px;
+  
+}
+
+.fa-youtube{
+  background: #bb0000;
+  color: white;
+  border-radius: 50px;
+  padding: 8px 9px 8px 9px;
+  
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  border-radius: 50px;
+  padding: 8px 9px 8px 9px;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+  border-radius: 50px;
+  padding: 8px 9px 8px 9px;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  border-radius: 50px;
+  padding: 8px 12px 8px 12px;
+}
+/*
+.footer a.fa {
+  font-size: 20px;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.footer a.fa:hover {
+  color: #ffcc00;
+}*/
+
+/* Copyright */
+.footer .copyright {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  color: var(--black);
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin: 20px 0;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .nav-links {
@@ -220,63 +373,3 @@ nav {
 }
 
 
-/*filter btn styles*/
-
-.filter-buttons {
-  margin: 20px auto;
-  
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.filter-btn {
-  padding: 8px 16px;
-  background-color: var(--primary-color);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.filter-btn:hover {
-  background-color: var(--secondary-color);
-}
-
-.filter-btn.active {
-  background-color: var(--sea-color);
-  color: white;
-}
-.quotes-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-
-}
-
-.quote-card {
-  text-align: center;
-     padding: 20px;
-    margin: 20px;
-    box-shadow: 3px 3px var(--primary-color), -1em 0 0.4em var(--sea-color);
-    border-radius: 10px;
-    font-size: 1.2em;
-    
-}
-.quote-card p{
-  font-size: 1em;
-  margin: 15px;
-  padding: 10px;
-}
-/*
-.item {
-  padding: 15px;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}*/
-
-.item.hide {
-  display: none;
-}
