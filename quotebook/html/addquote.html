@@ -31,56 +31,54 @@
       <section class="hero" id="hero-menu">
         <h1>Quote Collection</h1>
         <p>Share your favorite quotes and discover new ones!</p>
-
-        
-            <button id="viewQuotesBtn">View Quotes</button>
-            <button id="addQuoteBtn">Add Quote</button>
+       <button id="addQuoteBtn">Add Quote</button>
         
       </section>
     <main>
-        <!-- Quotes View -->
-        <section id="quotesView" class="active-view">
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-category="all">All Quotes</button>
-                <button class="filter-btn" data-category="motivational">Motivational</button>
-                <button class="filter-btn" data-category="inspirational">Inspirational</button>
-                <button class="filter-btn" data-category="nature">Nature</button>
-                <button class="filter-btn" data-category="life">Life</button>
-                <button class="filter-btn" data-category="wisdom">Wisdom</button>
-            </div>
-            
-            <div class="quotes-container" id="quotesContainer"></div>
-        </section>
+       
 
         <!-- Add Quote Form -->
-        <section id="addQuoteView">
-            <h2>Add Your Quote</h2>
-            <form id="quoteForm">
-                <div class="form-group">
-                    <label for="quoteText">Quote Text*</label>
-                    <textarea id="quoteText" required></textarea>
-                </div>
+         <div class="modal-overlay" id="quoteModal">
+            <div class="modal-content">
+               
+                <h2>Add Your Quote</h2>
+                <form id="quoteForm">
+                    <div class="form-group">
+                        <label for="quoteText">Quote Text*</label>
+                        <textarea id="quoteText" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="quoteAuthor">Author*</label>
+                        <input type="text" id="quoteAuthor" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quoteCategory">Category*</label>
+                        <select id="quoteCategory" required>
+                            <option value="">Select a category</option>
+                            <option value="motivational">Motivational</option>
+                            <option value="inspirational">Inspirational</option>
+                            <option value="nature">Nature</option>
+                            <option value="life">Life</option>
+                            <option value="wisdom">Wisdom</option>
+                        </select>
+                    </div>
+        
                 
                 <div class="form-group">
                     <label for="quoteAuthor">Author*</label>
                     <input type="text" id="quoteAuthor" required>
                 </div>
-                
-                <div class="form-group">
-                    <label for="quoteCategory">Category*</label>
-                    <select id="quoteCategory" required>
-                        <option value="">Select a category</option>
-                        <option value="motivational">Motivational</option>
-                        <option value="inspirational">Inspirational</option>
-                        <option value="nature">Nature</option>
-                        <option value="life">Life</option>
-                        <option value="wisdom">Wisdom</option>
-                    </select>
+                <div class="form-actions">
+                  <button type="submit">Submit Quote</button>
+                  <button type="button" id="cancelBtn">Cancel</button>
                 </div>
+               
                 
-                <button type="submit">Submit Quote</button>
+                
             </form>
-        </section>
-    </main>
+            </div>
+        </div>
+        </main>
+    
     </body>
     </html>
