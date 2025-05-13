@@ -117,37 +117,66 @@
       border-radius: 4px;
       cursor: pointer;
 }
+/* featured quotes section */
 
-
-/* Carousel */
-.carousel {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  overflow-x: auto;
-  padding: 10px 0;
+.featured-quotes {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
-/* Category Grid */
-.category-grid .categories {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 15px;
-}
-.category-card {
-  height: 120px;
-  border-radius: 8px;
-  display: flex;
-  align-items: flex-end;
-  padding: 15px;
-  color: white;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
-  background-size: cover;
+.featured-quotes h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #333;
 }
 
-/* Recent Quotes */
-.quote-item {
-  border-left: 3px solid #4CAF50;
-  padding-left: 15px;
+
+
+
+.quote-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.quote-card span {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
   margin-bottom: 15px;
 }
+
+.quote-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.like-btn, .share-btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.like-btn {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.like-btn:hover {
+  background: #ffcdd2;
+}
+
+.share-btn {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.share-btn:hover {
+  background: #bbdefb;
+}
+

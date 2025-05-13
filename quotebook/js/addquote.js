@@ -58,3 +58,48 @@ addQuoteBtn.addEventListener("click", function() {
         }
       });
     });
+
+
+// like share button functionality
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const likeButtons = document.querySelectorAll('.like-btn');
+    const shareButtons = document.querySelectorAll('.share-btn');
+
+    // LIKE BUTTON FUNCTIONALITY
+    likeButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        let currentLikes = parseInt(button.textContent.replace('♥', '').trim());
+        currentLikes++;
+        button.textContent = `♥ ${currentLikes}`;
+      });
+    });
+
+    // SHARE BUTTON FUNCTIONALITY
+    shareButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const quoteCard = button.closest('.quote-card');
+        const quoteText = quoteCard.querySelector('p').textContent;
+        const authorText = quoteCard.querySelector('span').textContent;
+
+        const fullQuote = `${quoteText} ${authorText}`;
+        const shareData = {
+          title: 'Quote',
+          text: fullQuote,
+          url: window.location.href
+        };
+
+        if (navigator.share) {
+          navigator.share(shareData)
+            .then(() => console.log('Quote shared successfully'))
+            .catch(error => console.error('Error sharing:', error));
+        } else {
+          // Fallback: copy to clipboard
+          navigator.clipboard.writeText(fullQuote)
+            .then(() => alert('Quote copied to clipboard'))
+            .catch(err => alert('Failed to copy quote'));
+        }
+      });
+    });
+  });
+
