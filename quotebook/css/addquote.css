@@ -10,6 +10,12 @@
   --offwhite: #c4f8f1ca;
   --white: #ffffff;
   --black: #000000;
+  --lightbrick: #ffebee;
+  --brick: #c62828;
+  --offbrick: #ffcdd2;
+    --offblue: #e3f2fd;
+  --color: #1565c0;
+  --offcolor: #e3f2fd;
 
 }
 #hero-menu{
@@ -163,7 +169,7 @@
 }
 
 .like-btn {
-  background: #ffebee;
+  background: var(--lightbrick) /*#ffebee*/;
   color: #c62828;
 }
 
@@ -177,6 +183,7 @@
 }
 
 .share-btn:hover {
-  background: #bbdefb;
+    background: #e3f2fd;
+ 
 }
 

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote Pen</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/topquote.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="../html/index.html">QuotePen</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()"> 
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../html/addquote.html">Add-Quote</a></li>
+      <li><a href="../html/topquote.html">Top-Quote</a></li>
+      <li><a href="../html/browsequote.html">Browse-Quote</a></li>
+       <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+
+  <section class="hero-top-quotes">
+    <h1>Top Quotes of the Day</h1>
+    <p>Discover the most liked and shared quotes.</p>
+    <!--<button onclick="scrollToQuotes()"> See Top Quotes</button>-->
+     <input type="text" id="search" placeholder="Search quotes...">
+  </section>
+
+  <section id="top-quotes">
+    <div class="filter-options">
+      <button onclick="filterQuotes('likes')">Most Liked</button>
+      <button onclick="filterQuotes('shares')">Most Shared</button>
+    </div>
+    <!--<input type="text" id="search" placeholder="Search quotes...">-->
+    <div id="quote-list"></div>
+  </section>
+
+
+
+    <footer>
+  <div class="footer">
+
+    <div class="footer-column">
+      <h5>Company</h5>
+      <ul>
+        <li>About</li>
+        <li>Careers</li>
+        <li>Terms</li>
+        <li>Privacy</li>
+        <li>Interest Based Ads</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h5>Work with us</h5>
+      <ul>
+        <li>Authors</li>
+        <li>Advertise</li>
+        <li>Authors & ads blog</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h5>CONNECT</h5>
+      <ul class="social-icons">
+        <li><a href="#" class="fa fa-youtube"></a></li>
+        <li><a href="#" class="fa fa-twitter"></a></li>
+        <li><a href="#" class="fa fa-instagram"></a></li>
+        <li><a href="#" class="fa fa-facebook"></a></li>
+   
+      </ul>
+    </div>
+
+    <p class="copyright">© 2024 QuotePen, Inc.</p>
+  </div>
+</footer>
+
+
+  <script src="../js/script.js"></script>
+  <script src="../js/menu.js"></script>
+  <script src="../js/api.js"></script>
+  <script src="../js/topquote.js"></script>
+</body>
+</html>
+ 
+        
