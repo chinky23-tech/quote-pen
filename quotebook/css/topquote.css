@@ -16,8 +16,10 @@
     --offblue: #e3f2fd;
   --color: #1565c0;
   --offcolor: #e3f2fd;
+    --graycolor:  #666;
+  --shadowcolor:  rgba(0, 0, 0, 0.15);
 
-}
+}/*
 .hero-top-quotes{
     display: flex;
     flex-direction: column;
@@ -25,6 +27,7 @@
     align-items: center;
     background-color: var(--secondary-color);
     padding: 20px;
+    
     font-size: 1em;
     text-align: center;
 }
@@ -42,26 +45,7 @@
     text-align: center;
     margin: 15px;
 }
-/*.hero-top-quotes button{
-    background-color: var(--sea-color);
-    color: var(--white);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 18px;
-   font-size: 1.2em;
-    cursor: pointer;
-    margin: 20px;
-}*/
-#search{
-    
-    font-size: 1em;
-    color: var(--black);
-    margin: 20px;
-    padding: 12px;
-    
-    border-radius: 15px;
-    border: 1px solid var(--primary-color);
-}
+
 .top-quotes{
     display: flex;
     flex-direction: column;
@@ -72,19 +56,269 @@
     font-size: 1em;
     text-align: center;
 }
+
+
+.filter-options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.filter-options .like-btn,
+.filter-options .share-btn {
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.filter-options .like-btn {
+  background-color: var(--offbrick);
+  color: var(--brick);
+}
+
+.filter-options .like-btn:hover {
+  background-color: var(--lightbrick);
+}
+
+.filter-options .share-btn {
+  background-color: var(--offblue);
+  color: var(--color);
+}
+
+.filter-options .share-btn:hover {
+  background-color: var(--offcolor);
+}
+
+
+#search {
+    margin: 20px;
+  padding: 12px 20px;
+  width: 80%;
+  max-width: 380px;
+  border: 1px solid var(--sea-color);
+  border-radius: 25px;
+  font-size: 1rem;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+#search:focus {
+  box-shadow: 0 0 5px var(--shadowcolor);
+  border-color: var(--sea-color);
+}
+
+/* === FILTER BUTTONS === 
+.filter-options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.filter-options .like-btn,
+.filter-options .share-btn {
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.filter-options .like-btn {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.filter-options .like-btn:hover {
+  background-color: #ffcdd2;
+}
+
+.filter-options .share-btn {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.filter-options .share-btn:hover {
+  background-color: #bbdefb;
+}
+*/
+/* === QUOTE LIST SECTION === */
+ 
+
+
+/* === QUOTE CARD === 
+
+.quote-card {
+  text-align: center;
+     padding: 20px;
+    margin: 20px;
+    box-shadow: 3px 3px var(--primary-color), -1em 0 0.4em var(--sea-color);
+    border-radius: 10px;
+    font-size: 1.2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.quote-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.quote-card p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+
+ === ACTION BUTTONS === 
+.quote-meta {
+  display: flex;
+  gap: 10px;
+}
+
+.quote-meta button {
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.quote-meta button:first-child {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.quote-meta button:first-child:hover {
+  background-color: #ffcdd2;
+}
+
+.quote-meta button:last-child {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.quote-meta button:last-child:hover {
+  background-color: #bbdefb;
+}
+*/
+.hero-top-quotes {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    margin-bottom: 2rem;
+}
+
+.hero-top-quotes h1 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.hero-top-quotes p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+#search {
+    padding: 0.8rem 1.2rem;
+    width: 60%;
+    max-width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 1rem;
+    outline: none;
+}
+
+#search:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+}
+
+#top-quotes {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
 .filter-options {
     display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
     justify-content: center;
-    align-items: center;
-    margin: 20px;
 }
+
 .filter-options button {
-    background-color: var(--primary-color);
-    color: var(--white);
-    padding: 10px 20px;
+    padding: 0.6rem 1.2rem;
     border: none;
-    border-radius: 18px;
-    font-size: 1.2em;
+    border-radius: 5px;
     cursor: pointer;
-    margin: 0 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.like-btn {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.share-btn {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.filter-options button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+#quote-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.quote-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.quote-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.quote-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.quote-author {
+    font-style: italic;
+    color: #666;
+    text-align: right;
+}
+
+.quote-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.quote-stats span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
 }

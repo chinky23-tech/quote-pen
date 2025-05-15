@@ -16,6 +16,8 @@
     --offblue: #e3f2fd;
   --color: #1565c0;
   --offcolor: #e3f2fd;
+  --graycolor:  #666;
+  --shadowcolor:  rgba(0, 0, 0, 0.15);
 
 }
 #hero-menu{
@@ -143,14 +145,14 @@
 
 .quote-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 12px var(--shadowcolor);
 }
 
 
 .quote-card span {
   display: block;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--graycolor);
   margin-bottom: 15px;
 }
 
