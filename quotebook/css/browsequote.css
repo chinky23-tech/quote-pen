@@ -71,7 +71,8 @@ main {
 
 /* Filters Sidebar */
 .filters {
-    width: 200px;
+    width: 300px;
+    margin: 25px;
     background: var(--offwhite);
     padding: 1.5rem;
     border-radius: 10px;
