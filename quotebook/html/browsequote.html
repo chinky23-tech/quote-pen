@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote Pen</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/addquote.css">
+  <link rel="stylesheet" href="../css/topquote.css">
+  <link rel ="stylesheet" href="../css/browsequote.css">
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="../html/index.html">QuotePen</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()"> 
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../html/addquote.html">Add-Quote</a></li>
+      <li><a href="../html/topquote.html">Top-Quote</a></li>
+      <li><a href="../html/browsequote.html">Browse-Quote</a></li>
+       <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+ 
+    <!-- Header with Search -->
+    <header class="quote-header">
+        <h1>Quote Explorer</h1>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search quotes or authors...">
+
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Filter Sidebar -->
+        <aside class="filters">
+            <h3>Filters <i class="fas fa-sliders-h"></i></h3>
+            <div class="filter-group">
+                <h4>Categories</h4>
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="motivational">Motivational</button>
+                <button class="filter-btn" data-category="love">Love</button>
+                <button class="filter-btn" data-category="wisdom">Wisdom</button>
+                <button class="filter-btn" data-category="funny">Funny</button>
+            </div>
+            <div class="filter-group">
+                <h4>Sort By</h4>
+                <select id="sort-by">
+                    <option value="popular">Most Popular</option>
+                    <option value="recent">Most Recent</option>
+                    <option value="random">Random</option>
+                </select>
+            </div>
+        </aside>
+
+        <!-- Quotes Grid -->
+        <section class="quotes-grid" id="quotes-grid">
+            <!-- Quotes will be dynamically inserted here -->
+        </section>
+    </main>
+
+    <!-- "Load More" Button -->
+    <div class="load-more-container">
+        <button id="load-more">Load More Quotes</button>
+    </div>
+<footer>
+  <div class="footer">
+
+    <div class="footer-column">
+      <h5>Company</h5>
+      <ul>
+        <li>About</li>
+        <li>Careers</li>
+        <li>Terms</li>
+        <li>Privacy</li>
+        <li>Interest Based Ads</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h5>Work with us</h5>
+      <ul>
+        <li>Authors</li>
+        <li>Advertise</li>
+        <li>Authors & ads blog</li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h5>CONNECT</h5>
+      <ul class="social-icons">
+        <li><a href="#" class="fab fa-youtube"></a></li>
+        <li><a href="#" class="fab fa-twitter"></a></li>
+        <li><a href="#" class="fab fa-instagram"></a></li>
+        <li><a href="#" class="fab fa-facebook"></a></li>
+   
+      </ul>
+    </div>
+
+    <p class="copyright">© 2024 QuotePen, Inc.</p>
+  </div>
+</footer>
+
+   <script src="../js/browsequote.js"></script>
+    </body>
+    </html>

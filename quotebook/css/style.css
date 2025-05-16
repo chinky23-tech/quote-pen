@@ -5,11 +5,11 @@
 }
 
 :root{
-  --primary-color: #00c9c8;
+  --primary-color: rgb(193, 241, 235);
   --secondary-color: #bffcf9;
   --sea-color:#47817f;
   --offwhite: #c4f8f1ca;
-  --white: #ffffff;
+   --white: #e4fbf2;
   --black: #000000;
   --lightbrick: #ffebee;
   --brick: #c62828;
@@ -68,7 +68,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem;
-  background-color: var(--primary-color);
+background-color: rgb(193, 241, 235);
+  
 }
 
 .nav-links {
@@ -176,7 +177,7 @@ nav {
 
 .filter-btn.active {
   background-color: var(--sea-color);
-  color: white;
+  color: var(--white);
 }
 .quotes-container {
   max-width: 1200px;
@@ -192,6 +193,7 @@ nav {
     box-shadow: 3px 3px var(--primary-color), -1em 0 0.4em var(--sea-color);
     border-radius: 10px;
     font-size: 1.2em;
+    background: var(--white);
     
 }
 .quote-card:hover {

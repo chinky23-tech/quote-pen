@@ -4,11 +4,11 @@
   box-sizing: border-box;
 }
 :root{
-  --primary-color: #00c9c8;
+   --primary-color: rgb(193, 241, 235);
   --secondary-color: #bffcf9;
   --sea-color:#47817f;
   --offwhite: #c4f8f1ca;
-  --white: #ffffff;
+  --white: #e4fbf2;
   --black: #000000;
   --lightbrick: #ffebee;
   --brick: #c62828;
@@ -16,7 +16,7 @@
     --offblue: #e3f2fd;
   --color: #1565c0;
   --offcolor: #e3f2fd;
-    --graycolor:  #666;
+  --graycolor:  #666;
   --shadowcolor:  rgba(0, 0, 0, 0.15);
 
 }/*
@@ -211,18 +211,19 @@
 */
 .hero-top-quotes {
     text-align: center;
-    padding: 2rem;
-    background-color: #f8f9fa;
+    padding: 5rem;
+    
+    background-color: var(--secondary-color);
     margin-bottom: 2rem;
 }
 
 .hero-top-quotes h1 {
-    color: #333;
-    margin-bottom: 0.5rem;
+    color: var(--black);
+    margin-bottom: 0.8rem;
 }
 
 .hero-top-quotes p {
-    color: #666;
+    color: var(--graycolor);
     margin-bottom: 1.5rem;
 }
 
@@ -230,15 +231,15 @@
     padding: 0.8rem 1.2rem;
     width: 60%;
     max-width: 500px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--sea-color);
     border-radius: 25px;
     font-size: 1rem;
     outline: none;
 }
 
 #search:focus {
-    border-color: #4a90e2;
-    box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+    border-color: var(--sea-color);
+    box-shadow: 0 0 5px var(--shadowcolor);
 }
 
 #top-quotes {
@@ -284,11 +285,13 @@
 }
 
 .quote-card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+   text-align: center;
+     padding: 20px;
+    margin: 20px;
+    background: var(--white);
+    box-shadow: 3px 3px var(--primary-color), -1em 0 0.4em var(--sea-color);
+    border-radius: 10px;
+    font-size: 1.2em;
 }
 
 .quote-card:hover {
