@@ -61,7 +61,7 @@
 
 
 
-/* Main Layout */
+/* Main Layout 
 main {
     display: flex;
     max-width: 1200px;
@@ -69,28 +69,27 @@ main {
     gap: 2rem;
 }
 
-/* Filters Sidebar */
-.filters {
-    width: 300px;
-    margin: 25px;
-    background: var(--offwhite);
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    height: fit-content;
-}
 
+.filters{
+     margin: 20px auto;
+     justify-content: center;
+  align-items: center;
+   display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .filter-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
     margin-bottom: 1.5rem;
 }
 
-.filter-group h4 {
-    margin: 0 0 0.8rem 0;
-    color: var(--primary);
-}
+
 
 .filter-btn {
-    display: block;
+    display: flex;
     width: 100%;
     padding: 8px 12px;
     margin-bottom: 8px;
@@ -109,29 +108,133 @@ main {
 .filter-btn.active {
     background: var(--sea-color);
     color: var(--black);
-    border-color: var(--primary-color);
+    border-color: var(--sea-color);
 }
 #sort-by {
-    width: 100%;
+   margin-bottom: 9px;
     padding: 8px;
     border-radius: 5px;
     border: 1px solid var(--sea-color);
-    background-color: var(--offwhite);
+    background-color: var(--secondary);
+}
+*/
+
+/* Main Layout */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
 
-
-
-
-/* Quotes Grid */
-.quotes-grid {
-    flex: 1;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+/* Filters Container */
+.filters {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
 }
 
+/* Filter Groups */
+.filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.filter-group:first-child {
+    justify-content: center;
+}
+
+/* Filter Buttons */
+.filter-btn {
+    padding: 0.6rem 1.2rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 30px;
+    background: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    border-color: #4361ee;
+    color: #4361ee;
+}
+
+.filter-btn.active {
+    background: #4361ee;
+    color: white;
+    border-color: #4361ee;
+}
+
+/* Sort Dropdown */
+#sort-by {
+    padding: 0.6rem 1.2rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 30px;
+    background: none;
+    font-weight: 500;
+    color: #555;
+    cursor: pointer;
+    appearance: none;
+    padding-right: 2.5rem;
+
+    
+    background-position: right 0.8rem center;
+    background-size: 12px;
+    transition: all 0.3s ease;
+}
+
+#sort-by:hover, #sort-by:focus {
+    border-color: #4361ee;
+    color: #4361ee;
+    outline: none;
+}
+
+/* Quotes Grid */
+.quotes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .filter-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .filter-group:first-child {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .filter-btn, #sort-by {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .quotes-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Quotes Grid *
+.quotes-container {
+  
+    display: block;
+   
+    gap: 1.5rem;
+}
+/*
 .quote-card {
-    background: var(--white);
+    background: white;
     border-radius: 10px;
     padding: 1.5rem;
     box-shadow: 0 3px 10px rgba(0,0,0,0.08);
@@ -150,13 +253,11 @@ main {
     line-height: 1.6;
     margin-bottom: 1rem;
     font-style: italic;
-    color: black;
-    
 }
 
 .quote-author {
     font-weight: 600;
-    color:  var(--graycolor);
+    color: var(--primary);
     text-align: right;
 }
 
@@ -164,8 +265,8 @@ main {
     position: absolute;
     top: 0;
     right: 0;
-   background: #bffcf9;
-   box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    background: var(--primary);
+    color: white;
     padding: 0.3rem 0.8rem;
     border-radius: 0 10px 0 5px;
     font-size: 0.8rem;
@@ -175,7 +276,7 @@ main {
     display: flex;
     justify-content: space-between;
     margin-top: 1.5rem;
-    color:  black;
+    color: var(--gray);
 }
 
 .quote-actions button {
@@ -189,6 +290,18 @@ main {
 .quote-actions button:hover {
     color: var(--primary);
 }
+
+*/
+
+
+
+
+
+
+
+
+
+
 
 /* Load More Button */
 .load-more-container {
