@@ -128,7 +128,40 @@ const quotes = [
         author: "Albert Einstein",
         likes: 210,
         shares: 55
+    },
+        {
+        text: "You miss 100% of the shots you don’t take.",
+        author: "Wayne Gretzky",
+        likes: 213,
+        shares: 83
+    },
+    {
+        text: "The future belongs to those who believe in the beauty of their dreams.",
+        author: "Eleanor Roosevelt",
+        likes: 187,
+        shares: 72
+    },
+    {
+        text: "Hardships often prepare ordinary people for an extraordinary destiny.",
+        author: "C.S. Lewis",
+        likes: 165,
+        shares: 59
+    },
+    {
+        text: "In the middle of every difficulty lies opportunity.",
+        author: "Albert Einstein",
+        likes: 201,
+        shares: 78
+    },
+    {
+        text: "Don't watch the clock; do what it does. Keep going.",
+        author: "Sam Levenson",
+        likes: 146,
+        shares: 51
     }
+
+  
+  
 ];
 
 // DOM elements

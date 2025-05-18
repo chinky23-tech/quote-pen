@@ -10,11 +10,11 @@
  --tw-bk: #55ACEE;
  --inst-bk:#125688;
  --fb-bk:#3B5998;
-
+--gray-color: #333;
 }
 
 
-/* Header Styles */
+
 .quote-header {
     background: var(--hero-color);
     color:  var(--black);
@@ -48,88 +48,29 @@
 #search:focus{
     
  border-color: var(--text-color);
+
     }
 
 
-
-/* Main Layout 
-main {
-    display: flex;
-    max-width: 1200px;
-    margin: 2rem auto;
-    gap: 2rem;
-}
-
-
-.filters{
-     margin: 20px auto;
-     justify-content: center;
-  align-items: center;
-   display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.filter-group {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-}
-
-
-
-.filter-btn {
-    display: flex;
-    width: 100%;
-    padding: 8px 12px;
-    margin-bottom: 8px;
-    background: none;
-    border: 1px solid var(--sea-color);
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: left;
-    transition: all 0.3s;
-}
-
-.filter-btn:hover {
-    border-color: var(--secondary-color);
-}
-
-.filter-btn.active {
-    background: var(--sea-color);
-    color: var(--black);
-    border-color: var(--sea-color);
-}
-#sort-by {
-   margin-bottom: 9px;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid var(--sea-color);
-    background-color: var(--secondary);
-}
-*/
-
-/* Main Layout */
 main {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
 
-/* Filters Container */
+
 .filters {
-    background: white;
+    background: var(--main-color);
     padding: 1.5rem;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    box-shadow: 0px 2px 8px var(--text-color);
     margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-/* Filter Groups */
+
 .filter-group {
     display: flex;
     flex-wrap: wrap;
@@ -141,37 +82,38 @@ main {
     justify-content: center;
 }
 
-/* Filter Buttons */
+
 .filter-btn {
     padding: 0.6rem 1.2rem;
-    border: 2px solid #e0e0e0;
+  
+   border: 2px solid var(--hero-color);
     border-radius: 30px;
     background: none;
     cursor: pointer;
     font-weight: 500;
-    color: #555;
+    color: var(--gray-color);
     transition: all 0.3s ease;
 }
 
 .filter-btn:hover {
-    border-color: #4361ee;
-    color: #4361ee;
+    border-color: var(--btn-color);
+    color: var(--gray-color);
 }
 
 .filter-btn.active {
-    background: #4361ee;
-    color: white;
-    border-color: #4361ee;
+    background: var(--btn-color);
+    color: var(--main-color);
+    border-color: var(--hero-color)
 }
 
-/* Sort Dropdown */
+
 #sort-by {
     padding: 0.6rem 1.2rem;
-    border: 2px solid #e0e0e0;
+    border: 2px solid var(--hero-color);
     border-radius: 30px;
     background: none;
     font-weight: 500;
-    color: #555;
+    color: var(--gray-color);
     cursor: pointer;
     appearance: none;
     padding-right: 2.5rem;
@@ -183,16 +125,66 @@ main {
 }
 
 #sort-by:hover, #sort-by:focus {
-    border-color: #4361ee;
-    color: #4361ee;
+    border-color: var(--btn-color);
+    color: var(--gray-color);
     outline: none;
 }
 
-/* Quotes Grid */
+
 .quotes-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1.5rem;
+    
+    
+}
+.quote-card{
+    position: relative;
+
+    box-shadow: 0 2px 10px var(--gray-color);
+}
+.quote-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.quote-author {
+    font-weight: 600;
+    color: var(--text-color);
+    text-align: right;
+}
+.quote-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    color: var(--gray-color);
+}
+
+.quote-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+.quote-actions button:hover {
+    color: var(--gray-color);
+}
+.quote-category {
+    position: relative;
+    top: -20px;
+    right:-237px ;
+    text-align: center;
+    width: 35%;
+    background: var(--hero-color);
+    box-shadow: 0px 2px 8px var(--text-color);
+    color: var(--text-color); 
+    padding: 10px 20px;
+    border-radius: 0 10px 0 5px;
+    font-size: 0.8rem;
 }
 
 /* Responsive Adjustments */
@@ -216,73 +208,16 @@ main {
         grid-template-columns: 1fr;
     }
 }
-/* Quotes Grid *
-.quotes-container {
-  
-    display: block;
-   
-    gap: 1.5rem;
-}
-/*
-.quote-card {
-    background: white;
-    border-radius: 10px;
-    padding: 1.5rem;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-    transition: transform 0.3s, box-shadow 0.3s;
-    position: relative;
-    overflow: hidden;
-}
 
-.quote-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
 
-.quote-text {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-    font-style: italic;
-}
 
-.quote-author {
-    font-weight: 600;
-    color: var(--primary);
-    text-align: right;
-}
 
-.quote-category {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: var(--primary);
-    color: white;
-    padding: 0.3rem 0.8rem;
-    border-radius: 0 10px 0 5px;
-    font-size: 0.8rem;
-}
 
-.quote-actions {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1.5rem;
-    color: var(--gray);
-}
 
-.quote-actions button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: inherit;
-    transition: color 0.3s;
-}
 
-.quote-actions button:hover {
-    color: var(--primary);
-}
 
-*/
+
+
 
 
 
@@ -301,9 +236,9 @@ main {
 }
 
 #load-more {
-    background: var(--sea-color);
-    color: white;
-    border: none;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border: 2px solid var(--btn-color);
     padding: 12px 30px;
     border-radius: 30px;
     font-size: 1rem;
@@ -312,9 +247,9 @@ main {
 }
 
 #load-more:hover {
-    background: var(--secondary);
+    background: var(--hero-color);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3);
+    box-shadow: 0 5px 15px var(--gray-color);
 }
 
 /* Responsive Design */
