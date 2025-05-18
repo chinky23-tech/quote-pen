@@ -4,28 +4,26 @@
   box-sizing: border-box;
 }
 :root{
-  --primary-color: rgb(193, 241, 235);
-  --secondary-color: #bffcf9;
-  --sea-color:#47817f;
-  --offwhite: #c4f8f1ca;
-   --white: #e4fbf2;;
-  --black: #000000;
-  --lightbrick: #ffebee;
-  --brick: #c62828;
-  --offbrick: #ffcdd2;
-    --offblue: #e3f2fd;
-  --color: #1565c0;
-  --offcolor: #e3f2fd;
-  --graycolor:  #666;
-  --shadowcolor:  rgba(0, 0, 0, 0.15);
+  --main-color: #ffffff;
+  --primary-color: #eeeeee;
+ --hero-color: #E8E8E8;
+ --text-color: #1B1B1B;
+ --btn-color: #6A6A6A;
+ --yt-bk: #bb0000;
+ --tw-bk: #55ACEE;
+ --inst-bk:#125688;
+ --fb-bk:#3B5998;
+ --rgpa: rgba(0, 0, 0, 0.2);
+ --gray-color: #333;
 
 }
+
 #hero-menu{
     
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: var(--secondary-color);
+   background:var(--hero-color) ;
     padding: 20px;
     font-size: 1em;
     text-align: center;
@@ -33,23 +31,23 @@
 }
 .hero h1{
     font-size: 2.5em;
-    color: var(--black);
+    color: var(--text-color);
     text-align: center;
     margin: 40px;
 }
 .hero p{
     font-size: 1.2em;
-    color: var(--black);
+    color: var(--text-color);
     text-align: center;
     margin: 15px;
 }
 .hero button{
-    background-color: var(--sea-color);
-    color: var(--white);
+    background-color: var(--btn-color);
+    color: var(--main-color);
     padding: 10px 20px;
     border: none;
-    border-radius: 13px;
-  
+    border-radius: 20px;
+  box-shadow: 0px 2px 1px 2px var(--text-color);
     font-size: 1.2em;
     cursor: pointer;
     margin: 20px;
@@ -60,7 +58,7 @@
       max-width: 600px;
       margin: 20px auto;
       padding: 20px;
-      background: white;
+      background: var(--main-color);
       border-radius: 8px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
@@ -80,17 +78,21 @@
     .form-group select {
       width: 100%;
       padding: 10px;
-      border: 1px solid var(--offwhite);
+      border: 1px solid var(--text-color);
       border-radius: 4px;
     }
-    
+    .form-group textarea,
+    .form-group input,
+    .form-group select{
+      outline: none !important;
+    }
     .form-group textarea {
       min-height: 100px;
     }
     
     button[type="submit"] {
-      background:var(--primary-color);
-      color: var(--white);
+      background:var(--btn-color);
+      color: var(--main-color);
       border: none;
       padding: 10px 20px;
       border-radius: 4px;
@@ -100,26 +102,26 @@
     .modal-overlay {
       display: none;
       position: fixed;
-      top: 68px;
+      top: 66px;
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(0,0,0,0.5);
+      background:  var(--rgpa);
       z-index: 1000;
       justify-content: center;
       align-items: center;
     }
     
     .modal-content {
-      background: white;
+      background: var(--main-color);
       padding: 20px;
       border-radius: 8px;
       max-width: 500px;
       width: 90%;
     }
 #cancelBtn{
-  background:var(--primary-color);
-      color: var(--white);
+  background:var(--btn-color);
+      color: var(--main-color);
       border: none;
       padding: 10px 20px;
       border-radius: 4px;
@@ -137,7 +139,7 @@
   text-align: center;
   margin-bottom: 30px;
   font-size: 2rem;
-  color: #333;
+  color: var(--gray-color);
 }
 
 
@@ -145,14 +147,14 @@
 
 .quote-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px var(--shadowcolor);
+ 
 }
 
 
 .quote-card span {
   display: block;
   font-size: 0.9rem;
-  color: var(--graycolor);
+  color: var(--gray-colorcolor);
   margin-bottom: 15px;
 }
 
@@ -171,21 +173,15 @@
 }
 
 .like-btn {
-  background: var(--lightbrick) /*#ffebee*/;
-  color: #c62828;
+  background: var(--primary-color); /*#ffebee*/;
+  color: var(--yt-bk);
 }
 
-.like-btn:hover {
-  background: #ffcdd2;
-}
 
 .share-btn {
-  background: #e3f2fd;
-  color: #1565c0;
+  background: var(--primary-color);
+  color: var(--fb-bk);
 }
 
-.share-btn:hover {
-    background: #e3f2fd;
- 
-}
+
 
