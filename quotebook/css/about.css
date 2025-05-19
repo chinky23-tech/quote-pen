@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --main-color: #ffffff;
+  --primary-color: #eeeeee;
+ --hero-color: #E8E8E8;
+ --text-color: #1B1B1B;
+ --btn-color: #6A6A6A;
+ --yt-bk: #bb0000;
+ --tw-bk: #55ACEE;
+ --inst-bk:#125688;
+ --fb-bk:#3B5998;
+ --rgpa: rgba(0, 0, 0, 0.2);
+ --gray-color: #333;
+
+}
+
+    .about-container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 40px 20px;
+      background-color: var(--hero-color);
+      box-shadow: 0 0 10px var(--text-color);
+      border-radius: 8px;
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--gray-color);
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: var(--gray-color);
+      border-left: 4px solid  var(--yt-bk);
+      padding-left: 10px;
+    }
+
+    p {
+      margin: 15px 0;
+    }
+
+    .quote-box {
+      margin-top: 30px;
+      padding: 20px;
+      border-left: 4px solid var(--yt-bk);
+      background-color:  var(--primary-color);
+      font-style: italic;
+      border-radius: 6px;
+    }
+
+    .quote-author {
+      margin-top: 10px;
+      text-align: right;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .about-container {
+        padding: 25px 15px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+    }

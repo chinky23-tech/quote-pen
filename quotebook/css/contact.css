@@ -17,29 +17,34 @@
  --gray-color: #333;
 
 }
-.contact-container{
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 30px;
-    border-radius: 10px;
-    background: var(--hero-color);
-    box-shadow: 0 4px 8px var(--text-color);
-    
-}
-.contact-container h2{
-    text-align: center;
-}
-label{
-    display: block;
-    margin: 12px 0 6px;
-    font-weight: bold;
-}
+
+    .contact-container {
+      max-width: 1200px;
+      margin: 50px auto;
+      background: var(--hero-color);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px var(--text-color);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: var(--gray-color);
+    }
+
+    label {
+      display: block;
+      margin: 12px 0 6px;
+      font-weight: bold;
+    }
+
     input[type="text"],
     input[type="email"],
     textarea {
       width: 100%;
       padding: 12px;
-      border: 1px solid  var(--text-color);
+      border: 1px solid var(--gray-color);
       border-radius: 6px;
       resize: vertical;
     }
@@ -47,7 +52,11 @@ label{
     textarea {
       min-height: 120px;
     }
-
+  input[type="text"],
+    input[type="email"],
+    textarea:focus{
+        outline:  none !important;
+    }
     button {
       margin-top: 15px;
       background-color: var(--btn-color);
@@ -61,15 +70,10 @@ label{
     }
 
     button:hover {
-      background: var(--main-color);
-      border:  1px solid var(--btn-color);
-      color: var(--text-color);
+      background-color: var(--main-color);
+      border: 2px solid var(--btn-color);
     }
-input[type="text"],
-    input[type="email"],
-    textarea:focus{
-        outline:  none !important;
-    }
+
     .error {
       color: red;
       font-size: 0.9em;

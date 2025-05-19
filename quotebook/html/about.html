@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quote Pen</title>
-  <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/about.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 <body>
-  <nav>
+      <nav>
     <div class="logo">
       <a href="../html/index.html">QuotePen</a>
     </div>
@@ -26,45 +26,28 @@
         <li><a href="../html/about.html">About</a></li>
       </ul>
     </nav>
-  <section class="hero" id="hero-menu">
-    <div class="hero-content">
-      <div class="quote-slide active">
-<p>“The best way to predict the future is to create it.” </p>
- <h6> || — Abraham Lincoln</h6>
- </div>
-      <div class="quote-slide">
- <p>"Good better,best .Never let it rest.'Till your good is better and your better is best."</p>
- <h6>|| - St. Jerome</h6>
- </div>
-      <div class="quote-slide">
- <p>"It does not matter how slowly you go as long as you do not stop."</p>
-<h6>|| - Confucius</h6>
-</div>
-   </div>                                
+   <div class="about-container">
+    <h1>About Quotes</h1>
 
-      <a href="../html/browsequote.html" class="btn">Browse a Quote</a>
-    
-    </section>
-   
+    <p>
+      Welcome to <strong>Quote Pen</strong> — a place where words come alive. Quotes have the unique ability to inspire, reflect wisdom, stir emotions, and offer insight in just a few words. Our mission is to collect, share, and celebrate the most impactful quotes from across history and modern times.
+    </p>
 
-     
+    <h2>Why Quotes Matter</h2>
+    <p>
+      Quotes are more than just words. They’re snapshots of human thought — tiny windows into someone’s worldview. A single quote can change your day, shift your mindset, or give you the motivation to move forward.
+    </p>
 
+    <h2>Our Inspiration</h2>
+    <p>
+      Whether it's from great thinkers like Aristotle, poets like Maya Angelou, or pop culture icons — every quote carries a piece of someone’s truth. Quote Pen was born out of love for sharing those truths and helping others discover them.
+    </p>
 
-   
-    
+    <div class="quote-box" id="randomQuote">
+      <!-- JavaScript will inject a random quote here -->
+    </div>
+  </div>
 
-<div class="filter-buttons">
-  <button class="filter-btn active" data-category="all">All</button>
-  <button class="filter-btn" data-category="motivational">Motivational</button>
-  <button class="filter-btn" data-category="inspirational">Inspirational</button>
-  <button class="filter-btn" data-category="nature">Nature</button>
-  <button class="filter-btn" data-category="life">Life</button>
-  <button class="filter-btn" data-category="wisdom">Wisdom</button>
-</div>
-
-<div class="quotes-container" id="quotesContainer">
-  <!-- Quotes will be inserted here by JavaScript -->
-</div>
 
 <footer>
   <div class="footer">
@@ -103,12 +86,6 @@
     <p class="copyright">© 2024 QuotePen, Inc.</p>
   </div>
 </footer>
-
-
-  <script src="../js/script.js"></script>
-  <script src="../js/menu.js"></script>
-  <script src="../js/api.js"></script>
+<script src="../js/about.js"></script>
 </body>
 </html>
- 
-        
