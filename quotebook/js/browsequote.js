@@ -255,7 +255,7 @@ const loadMoreBtn = document.getElementById('load-more');
 
 // Pagination Control
 let currentIndex = 0;
-const QUOTES_PER_LOAD = 3;
+const QUOTES_PER_LOAD = 6;
 let currentFilteredQuotes = [...quotes];
 
 // Utility Functions

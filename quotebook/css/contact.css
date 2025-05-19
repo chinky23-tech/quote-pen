@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --main-color: #ffffff;
+  --primary-color: #eeeeee;
+ --hero-color: #E8E8E8;
+ --text-color: #1B1B1B;
+ --btn-color: #6A6A6A;
+ --yt-bk: #bb0000;
+ --tw-bk: #55ACEE;
+ --inst-bk:#125688;
+ --fb-bk:#3B5998;
+ --rgpa: rgba(0, 0, 0, 0.2);
+ --gray-color: #333;
+
+}
+.contact-container{
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    background: var(--hero-color);
+    box-shadow: 0 4px 8px var(--text-color);
+    
+}
+.contact-container h2{
+    text-align: center;
+}
+label{
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+}
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid  var(--text-color);
+      border-radius: 6px;
+      resize: vertical;
+    }
+
+    textarea {
+      min-height: 120px;
+    }
+
+    button {
+      margin-top: 15px;
+      background-color: var(--btn-color);
+      color: var(--main-color);
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: var(--main-color);
+      border:  1px solid var(--btn-color);
+      color: var(--text-color);
+    }
+input[type="text"],
+    input[type="email"],
+    textarea:focus{
+        outline:  none !important;
+    }
+    .error {
+      color: red;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      .contact-container {
+        padding: 20px;
+      }
+      button {
+        font-size: 14px;
+      }
+    }
