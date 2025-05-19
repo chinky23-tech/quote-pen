@@ -62,6 +62,8 @@
     @media (max-width: 600px) {
       .about-container {
         padding: 25px 15px;
+        margin: 20px 25px 20px 25px;
+        font-size: 1em;
       }
 
       h1 {
