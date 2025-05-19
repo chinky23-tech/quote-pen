@@ -127,7 +127,7 @@
       border-radius: 4px;
       cursor: pointer;
 }
-/* featured quotes section */
+
 
 .featured-quotes {
   max-width: 1200px;
@@ -173,7 +173,7 @@
 }
 
 .like-btn {
-  background: var(--primary-color); /*#ffebee*/;
+  background: var(--primary-color); 
   color: var(--yt-bk);
 }
 

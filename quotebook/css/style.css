@@ -37,7 +37,7 @@ left: 20px;
   text-transform: uppercase;
   font-size: 1.1em;
 }
-/* Basic Styles */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -58,7 +58,7 @@ background-color: var(--primary-color);
   color: var(--text-color);
 }
 
-/* Hamburger Button */
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -73,7 +73,7 @@ background-color: var(--primary-color);
 }
 
 
-/*hero section*/
+
  .hero{
   background: var(--hero-color);
   text-align: center;
@@ -114,7 +114,7 @@ background-color: var(--primary-color);
   display: block;
   opacity: 1;
  }
- /*hamburger menu*/
+
   .hamburger{
     display: none;
     flex-direction: column;
@@ -129,7 +129,7 @@ background-color: var(--primary-color);
    
     transition: all 0.3s ease;
   }
-  /*filter btn styles*/
+  
 
 .filter-buttons {
   margin: 25px auto;
@@ -193,7 +193,7 @@ background-color: var(--primary-color);
 }
   
 
-/*responsive*/
+
  @media (max-width: 768px) {
   
   .nav-links a {
@@ -207,7 +207,7 @@ background-color: var(--primary-color);
     display: flex;
   } 
 }
-/* footer*/
+
 
 
 .footer {
@@ -254,7 +254,7 @@ background-color: var(--primary-color);
 
 
   
-/* Social Icons */
+
 .social-icons {
   display: flex;
   
@@ -294,7 +294,7 @@ background-color: var(--primary-color);
   padding: 8px 12px 8px 12px;
 }
 
-/* Copyright */
+
 .footer .copyright {
   width: 100%;
   text-align: center;
@@ -303,7 +303,7 @@ background-color: var(--primary-color);
   color: var(--text-color);
 }
 
-/* Responsive for smaller screens */
+
 @media (max-width: 768px) {
   .footer {
     flex-direction: column;
@@ -320,7 +320,7 @@ background-color: var(--primary-color);
   }
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
